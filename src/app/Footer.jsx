@@ -305,7 +305,7 @@ const Footer = () => {
                   <div className="mt-4 space-y-4">
                     <a href="#" className="inline-block">
                       <Image
-                        src="/google.png"
+                        src="/google1.png"
                         alt="Get it on Google Play"
                         width={140}
                         height={42}
