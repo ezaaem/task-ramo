@@ -91,7 +91,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="py-20 px-4 md:px-8 bg-white text-black">
+    <section className="py-20 px-4 md:px-8 pt-20 bg-white text-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -144,14 +144,14 @@ const Pricing = () => {
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row gap-10 pt-10">
           {/* Sidebar */}
-          <div className="lg:w-1/4">
-            <div className="bg-white rounded-xl p-6  ">
+          <div className="lg:w-1/4  h-[550px] ">
+            <div className="bg-white  rounded-xl p-6  ">
               <h3 className="text-lg font-semibold mb-5">
                 Select from the upcoming options.
               </h3>
 
               {/* Space Options Buttons */}
-              <div className="flex flex-col gap-3 mb-12">
+              <div className="flex flex-col gap-5 mb-12">
                 {spaceOptions.map((option) => (
                   <button
                     key={option.id}
@@ -175,7 +175,7 @@ const Pricing = () => {
               </div>
 
               <div>
-                <h4 className="font-medium mb-2">Do you face any problems?</h4>
+                <h4 className="font-medium pt-5">Do you face any problems?</h4>
                 <p className="text-sm text-gray-600">
                   Contact us anytime, anywhere. We will be happy to help.
                 </p>
@@ -246,17 +246,34 @@ const Pricing = () => {
                 } relative 
                ${
                  plan.color === "bg-green-800"
-                   ? "h-[645px]"
+                   ? "h-[600px]"
                    : plan.color === "bg-blue-800"
-                   ? "h-[645px]"
-                   : "h-[600]px]"
-               } ${plan.color === "bg-green-800" ? "-top-12" : ""}`} // Ensuring it's starting from the top if needed
+                   ? "h-[600px]"
+                   : "h-[550px]"
+               } ${plan.color === "bg-green-800" ? "-top-13" : ""}`} // Ensuring it's starting from the top if needed
               >
                 {plan.badge && (
                   <div
                     className={`   ${plan.badgeColor} text-white   p-2 w-[80% ] mx-auto   justify-center rounded-xl mt-2 flex items-center gap-2`}
                   >
-                    <span>✨</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.5565 20.6281C14.6097 20.8416 14.796 21 15.016 21C15.238 21 15.4253 20.8385 15.478 20.6229C15.644 19.9435 15.9672 19.2124 16.4583 18.4297C17.5538 16.7008 19.6941 15.0042 21.6264 14.4565C21.8421 14.3953 22 14.2039 22 13.9797C22 13.7574 21.8447 13.5668 21.6305 13.5074C20.7555 13.2647 19.8963 12.8414 19.0651 12.25C17.2643 10.9758 15.9068 9.11587 15.4796 7.37835C15.4263 7.1616 15.2376 7 15.0144 7C14.7946 7 14.6077 7.15693 14.5536 7.36997C14.3417 8.20487 13.9497 9.01738 13.3776 9.84375C12.1599 11.6103 10.2966 12.9412 8.36486 13.5024C8.1523 13.5641 8 13.7551 8 13.9765C8 14.2027 8.15899 14.3961 8.37698 14.4565C9.29403 14.7105 10.2218 15.1884 11.1354 15.8776C13.0859 17.3405 14.1833 19.129 14.5565 20.6281Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M6.74659 10.7875C6.77696 10.9095 6.88343 11 7.00916 11C7.136 11 7.24303 10.9077 7.27315 10.7845C7.36803 10.3963 7.55268 9.97854 7.83333 9.53125C8.45934 8.54334 9.68234 7.5738 10.7865 7.26084C10.9097 7.22591 11 7.11649 11 6.98841C11 6.86139 10.9112 6.75247 10.7888 6.71851C10.2889 6.5798 9.79788 6.33795 9.32292 6C8.29388 5.27191 7.51817 4.20907 7.27403 3.2162C7.24358 3.09234 7.13577 3 7.00822 3C6.88262 3 6.77581 3.08967 6.74492 3.21141C6.62383 3.68849 6.39983 4.15279 6.07292 4.625C5.37706 5.63448 4.31236 6.39498 3.20849 6.71564C3.08703 6.75092 3 6.86006 3 6.98655C3 7.11581 3.09085 7.22636 3.21542 7.26086C3.73945 7.40602 4.26958 7.67906 4.79167 8.07292C5.90622 8.90883 6.53334 9.93087 6.74659 10.7875Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
                     {plan.badge}
                   </div>
                 )}
@@ -283,23 +300,23 @@ const Pricing = () => {
 
                   <div className="mb-6">
                     <span className="text-4xl font-bold">
-                      <span className="text-sm">{plan.currency} </span>
+                      <span className="text-2xl">{plan.currency} </span>
                       {plan.price}
                     </span>
-                    <span className="text-sm text-gray-600 ml-1">
+                    <span className="text-sm text-gray-800 ml-1">
                       /{billingCycle}
                     </span>
                   </div>
 
                   <div className="mb-8">
                     <h4 className="font-medium mb-3">What's included</h4>
-                    <ul className="flex flex-col gap-2">
+                    <ul className="flex flex-col gap-8">
                       {plan.features.map((feature, index) => (
                         <li key={index} className="flex items-center text-sm">
                           <span
                             className={`w-5 h-5 rounded-full flex justify-center items-center text-white text-xs mr-2 ${
                               plan.color === "bg-green-800"
-                                ? "bg-green-700"
+                                ? "bg-[#B49D97]"
                                 : "bg-green-800"
                             }`}
                           >

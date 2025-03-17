@@ -5,6 +5,9 @@ import Shared from "./Shared";
 import HowItWork from "./HowItWork";
 import Explore from "./Explore";
 import Pricing from "./Pricing";
+import OurRecent from "./OurRecent";
+import { Trusted } from "./Trusted";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -16,6 +19,9 @@ export default function Home() {
       <HowItWork />
       <Explore />
       <Pricing />
+      <OurRecent />
+      <Trusted />
+      <Footer />
     </>
   );
 }
