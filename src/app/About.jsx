@@ -136,15 +136,15 @@ export default function About() {
             <Image
               src="/group1.png"
               alt="Meeting Room"
-              width={600}
-              height={400}
+              width={640}
+              height={195}
               className="rounded-lg shadow-lg"
             />
             <Image
               src="/group2.png"
               alt="Office Space"
-              width={600}
-              height={400}
+              width={640}
+              height={195}
               className="rounded-lg shadow-lg"
             />
             <Image

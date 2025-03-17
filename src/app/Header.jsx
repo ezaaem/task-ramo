@@ -46,7 +46,7 @@ export default function Header() {
                 <Image
                   src="/saudi.png"
                   alt="Arabic"
-                  width={25}
+                  width={20}
                   height={20}
                   className="pl-1"
                 />
