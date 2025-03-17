@@ -134,14 +134,14 @@ export default function About() {
 
           <div className="space-y-4">
             <Image
-              src="/group1.png"
+              src="/groupf1.png"
               alt="Meeting Room"
               width={640}
               height={195}
               className="rounded-lg shadow-lg"
             />
             <Image
-              src="/group2.png"
+              src="/groupf2.png"
               alt="Office Space"
               width={640}
               height={195}

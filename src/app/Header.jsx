@@ -17,7 +17,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex     h-16">
             <div className="flex ml-1 items-center">
-              <Image src="/logo.png" alt="Logo" width={67} height={59} />
+              <Image src="/logo1.png" alt="Logo" width={67} height={59} />
             </div>
             <div className="hidden md:flex items-center pl-24 space-x-8">
               <a href="#" className="text-gray-600 hover:text-gray-900">
@@ -44,7 +44,7 @@ export default function Header() {
               <button className=" text-black flex px-4 py-2 rounded-md hover:bg-green-700">
                 العربيه{" "}
                 <Image
-                  src="/saudi.png"
+                  src="/saudi1.png"
                   alt="Arabic"
                   width={20}
                   height={20}

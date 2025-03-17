@@ -31,7 +31,7 @@ const Explore = () => {
           <div className="flex flex-wrap gap-4 pt-4">
             <Link href="https://play.google.com" className="flex-shrink-0">
               <Image
-                src="/google.png"
+                src="/google1.png"
                 width={180}
                 height={53}
                 alt="Get it on Google Play"
