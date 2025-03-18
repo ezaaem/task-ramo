@@ -103,12 +103,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-gray-100 pt-10 pb-5">
-        <div className="border-t-2  border-b-2 w-[80%] mx-auto border-gray-200">
-          <div className="max-w-6xl mx-auto py-10 px-1 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="border-t-2  border-b-2 w-[85%] mx-auto border-gray-200">
+          <div className="max-w-full mx-auto py-10  sm:px-6 ">
+            <div className="grid grid-cols-1 md:grid-cols-4  ">
               {/* Logo and Social Links */}
-              <div>
-                <div className="flex flex-col items-center">
+              <div className="w-[126px]">
+                <div className="flex flex-col  ">
                   <Image
                     src="/logo2.png"
                     alt="Chair Location"
@@ -117,7 +117,7 @@ const Footer = () => {
                     className="  "
                   />
 
-                  <div className="mt-6 grid grid-cols-2 gap-4">
+                  <div className="mt-6 grid grid-cols-2 gap-2 ">
                     {/* Social Icons */}
                     <a href="#" className="text-green-800 hover:text-green-700">
                       <span className="sr-only">Facebook</span>
@@ -173,7 +173,7 @@ const Footer = () => {
 
               {/* Main Pages */}
               <div className="mt-12 md:mt-0">
-                <h3 className="text-2xl font-medium text-gray-900">
+                <h3 className="text-2xl  font-bold  text-[#365327] ">
                   Main Pages
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -222,9 +222,9 @@ const Footer = () => {
               </div>
 
               {/* Products and App Download */}
-              <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div className="md:grid md:grid-cols-2 md:gap-6">
                 <div className="mt-12 md:mt-0">
-                  <h3 className="text-xl font-medium text-gray-900">
+                  <h3 className="text-2xl font-bold  text-[#365327]">
                     Products
                   </h3>
                   <ul className="mt-4 space-y-4">
@@ -238,7 +238,7 @@ const Footer = () => {
                             src="/co-working.png"
                             width={20}
                             height={20}
-                            className=" ml-2"
+                            className=" "
                           />
                         </span>{" "}
                         Shared Space
@@ -254,7 +254,7 @@ const Footer = () => {
                             src="/workplace.png"
                             width={20}
                             height={20}
-                            className=" ml-2"
+                            className=" "
                           />
                         </span>{" "}
                         Private Offices
@@ -270,7 +270,7 @@ const Footer = () => {
                             src="/conss.png"
                             width={20}
                             height={20}
-                            className=" ml-2"
+                            className=" "
                           />
                         </span>{" "}
                         Meeting Rooms
@@ -286,7 +286,7 @@ const Footer = () => {
                             src="/call.png"
                             width={20}
                             height={20}
-                            className=" ml-2"
+                            className=" "
                           />
                         </span>{" "}
                         Virtual Offices
@@ -294,50 +294,49 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-
-                <div className="mt-12 md:mt-0">
-                  <h3 className="text-lg font-medium text-gray-900">
-                    Download the
-                  </h3>
-                  <h3 className="text-lg font-medium text-gray-900">
-                    Chair Location App
-                  </h3>
-                  <div className="mt-4 space-y-4">
-                    <a href="#" className="inline-block">
-                      <Image
-                        src="/google1.png"
-                        alt="Get it on Google Play"
-                        width={140}
-                        height={42}
-                      />
-                    </a>
-                    <a href="#" className="inline-block">
-                      <Image
-                        src="/apple.png"
-                        alt="Download on the App Store"
-                        width={140}
-                        height={42}
-                      />
-                    </a>
-                  </div>
+              </div>
+              <div className="mt-12 md:mt-0">
+                <h3 className="text-2xl font-bold text-[#365327]">
+                  Download the
+                </h3>
+                <h3 className="text-2xl font-bold text-[#365327]">
+                  Chair Location App
+                </h3>
+                <div className="mt-4 flex flex-col gap-1  space-y-4">
+                  <a href="#" className="">
+                    <Image
+                      src="/google1.png"
+                      alt="Get it on Google Play"
+                      width={140}
+                      height={42}
+                    />
+                  </a>
+                  <a href="#" className="">
+                    <Image
+                      src="/apple.png"
+                      alt="Download on the App Store"
+                      width={140}
+                      height={42}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="  flex mx-auto w-[80%] pb-5  justify-between  items-center">
+      <div className="  flex mx-auto w-[85%] pb-5  justify-between  items-center">
         <div className="flex  ">
           <Link
             href="/privacy-policy"
-            className="text-sm text-gray-600 hover:text-gray-900"
+            className="text-sm text-gray-600 underline hover:text-gray-900 pr-5"
           >
             Privacy & Policy
           </Link>
-          <span className="text-gray-400">|</span>
+
           <Link
             href="/terms"
-            className="text-sm text-gray-600 hover:text-gray-900"
+            className="text-sm text-gray-600 underline hover:text-gray-900"
           >
             Terms & Conditions
           </Link>

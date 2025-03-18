@@ -41,14 +41,14 @@ export default function Header() {
             </div>
 
             <div className="flex items-center pl-20 space-x-4">
-              <button className=" text-black flex px-4 py-2 rounded-md hover:bg-green-700">
+              <button className=" text-black flex px-4 py-2 gap-1 rounded-md hover:bg-green-700">
                 العربيه{" "}
                 <Image
                   src="/saudi1.png"
                   alt="Arabic"
                   width={20}
                   height={20}
-                  className="pl-1"
+                  className=""
                 />
                 <ChevronDown className="text-black" />
               </button>

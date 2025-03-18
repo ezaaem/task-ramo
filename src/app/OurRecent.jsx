@@ -129,35 +129,35 @@ export default function OurRecent() {
                   <input
                     type="text"
                     placeholder="Full Name..."
-                    className="w-full px-4 py-3 rounded-md border border-b-gray-300 focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-md border border-b-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent"
                   />
                 </div>
                 <div>
                   <input
                     type="email"
                     placeholder="E-mail..."
-                    className="w-full px-4 py-3 rounded-md border border-b-gray-300 focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-md border border-b-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent"
                   />
                 </div>
                 <div>
                   <input
                     type="tel"
                     placeholder="Phone Number..."
-                    className="w-full px-4 py-3 rounded-md border border-b-gray-300 focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-md border border-b-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent"
                   />
                 </div>
                 <div>
                   <input
                     type="text"
                     placeholder="City..."
-                    className="w-full px-4 py-3 rounded-md border-b-gray-300 focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-md border border-b-gray-300 focus:outline-none focus:ring-2 placeholder:text-gray-400 focus:ring-green-800 focus:border-transparent"
                   />
                 </div>
                 <div>
                   <textarea
                     placeholder="Message Text..."
                     rows={4}
-                    className="w-full px-4 py-3 rounded-md border border-b-gray-300 focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-md border border-b-gray-300 focus:outline-none focus:ring-2 placeholder:text-gray-400 focus:ring-green-800 focus:border-transparent"
                   ></textarea>
                 </div>
                 <button
