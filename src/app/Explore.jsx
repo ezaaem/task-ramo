@@ -1,24 +1,26 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Explore = () => {
   return (
-    <section className="bg-[#FDF8F2] relative lift-10   max-w-7xl  pt-10 md:px-8 rounded-2xl ">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center  ">
+    <section className="bg-[#FDF8F2] relative lift-10 max-w-7xl pt-10 md:px-8 rounded-2xl">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center">
         {/* Mobile App Mockup */}
-        <div className=" pl-10">
+        <div className="pl-10">
           <Image
             src="/iphone.png"
             width={435}
             height={900}
             alt="Chair Location App on mobile device"
-            className=" "
+            className="" // No changes here to height/width
           />
         </div>
 
         {/* Content */}
-        <div className="    ">
-          <h1 className="text-4xl tracking-wider	   font-bold text-gray-800  ">
+        <div>
+          <h1 className="text-4xl tracking-wider font-bold text-gray-800">
             Explore The Chair Location App
           </h1>
           <p className="text-lg text-gray-600 pt-5">
@@ -49,17 +51,28 @@ const Explore = () => {
             </Link>
           </div>
 
-          {/* Handshake Icon */}
-          <div className="  absolute top-40 right-0  transform -translate-y-1/2">
+          {/* Handshake Icon with motion */}
+          <motion.div
+            animate={{
+              y: [0, -15, 0], // floating up and down
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="absolute top-40 right-0 transform -translate-y-1/2"
+          >
             <Image
               src="/hand.png"
               width={159}
               height={162}
               alt="Handshake"
-              className=""
+              className="" // No changes here
             />
-          </div>
-          <div className=" absolute -top-4 right-80 w-[25rem] h-14 bg-[#365327] rounded-2xl -z-10"></div>
+          </motion.div>
+
+          <div className="absolute -top-4 right-80 w-[25rem] h-14 bg-[#365327] rounded-2xl -z-10"></div>
         </div>
       </div>
     </section>
